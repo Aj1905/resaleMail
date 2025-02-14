@@ -3,6 +3,26 @@
         {
             "name": "kaikyo",
             "url": "https://www.mobile-ichiban.com/"
+            "xpath_searchbar": "//*[@id="G01SearchIpt"]"
+            "xpath_searchbutton": "//*[@id="G01Searchbtn"]"
+        },
+        {
+            "name": "God"
+            "url": "https://keitai-god.com/"
+            "xpath_searchbar": "//*[@id="top"]/div[2]/div[2]/div/div[3]/div/form/input"
+            "xpath_searchbutton": "//*[@id="top"]/div[2]/div[2]/div/div[3]/div/form/input"
+        },
+        {
+            "name": "Icchome"
+            "url": "https://www.1-chome.com/"
+            "xpath_searchbar": "//*[@id="key-search-box"]"
+            "xpath_searchbutton": "//*[@id="key-search-btn"]"
+        },
+        {
+            "name": "mobazou"
+            "url": "https://mobazo.jp/"
+            "xpath_searchbar": "//*[@id="topSearchInput"]"
+            "xpath_searchbutton": "/html/body/div[2]/div[1]/form"
         }
     ]
 }
