@@ -1,13 +1,34 @@
-# reasleMail
-This code searches multiple websites, compares item prices, and sends us an email to purchase it.
+# 環境構築
 
+Mac 環境構築 
 
-0. Resister URLs of websites for purchasing stores and reselling stores.
-1. Ask users to enter item names.
-2. Search the item in all of the websites.
-3. Collect the price data of the item from each websites.
-   → Difficulties :
-     ・It is difficult to accurately specify the price display position, as it varies depending on the product, the website and maybe the time.
-   　　　　・The searching function of the websites doesn't work well when you enter an abbreviated name. (for example: × iphone16pro max　→　○ iphone 16 　　      pro max)
-４. Compare them.
-５. If the price in one of the reselling stores is higher than the price in one of the purchasing stores (or its 0.99 times), this code sends us an e-mail.
+---
+
+## 1. ターミナルの起動
+
+Mac のターミナルを起動します。
+
+---
+
+## 2. プロジェクトディレクトリへの移動
+
+作業中のプロジェクトディレクトリに移動してください
+
+## 3. 仮想環境の作成
+
+Python の内蔵モジュール `venv` を使って仮想環境を作成します。以下のコマンドでは仮想環境のディレクトリ名を `venv` にしています。
+```bash
+python3 -m venv venv
+```
+
+## 4. 仮想環境のアクティベート
+
+作成した仮想環境をアクティベートします。
+```bash
+source venv/bin/activate
+```
+
+## 5. 依存パッケージのインストール
+```bash
+pip install -r requirements.txt
+```
