@@ -32,3 +32,22 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+
+
+# 買取一丁目
+
+## 概要
+
+- 各ジャンルにURLが用意されている。
+- 一見ページが複数あるように見えるが、実は最初にページにアクセスした時点で全ての商品がDOM上で読み込まれている。なのでページネーションする必要が無い（めっちゃ楽）。
+- 商品情報は以下の形式で取得（恐らくジャンルにより異なる）
+  ```python
+  # スマホ一覧ページ (https://www.1-chome.com/keitai)
+  {
+      "name": "商品名",
+      "type": "キャリアなど", 
+      "adjustment": "カラー別調整",
+      "new_price": "新品価格",
+      "used_price": "中古価格"
+  }
+  ```
